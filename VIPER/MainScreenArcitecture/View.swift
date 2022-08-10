@@ -34,7 +34,7 @@ class UserViewController: UIViewController, AnyView {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .red
+        view.backgroundColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
         setUpUI()
     }
     
@@ -43,7 +43,7 @@ class UserViewController: UIViewController, AnyView {
         
         // maybe u should do constraints here?
         //table.frame = view.bounds
-        table.backgroundColor = .blue
+        table.backgroundColor = .clear
         //print("test")
     }
     
@@ -80,6 +80,12 @@ extension UserViewController: UITableViewDelegate, UITableViewDataSource {
         var cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = users[indexPath.row].name
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        var detailsViewController = DetailsViewController()
+        detailsViewController.textToSet = users[indexPath.row].name
+        navigationController?.pushViewController(detailsViewController, animated: true)
     }
     
     

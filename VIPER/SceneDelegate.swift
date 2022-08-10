@@ -11,18 +11,23 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-
+    // https://developer.apple.com/forums/thread/665895
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         let userRouter = UserRouter.start()
-        
-        let initialVC = userRouter.entry
+        let initialVC = userRouter.entry!
         
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = initialVC
         self.window = window
+        
+        // set NavigationViewController as root view controller for UIVindow, and make rootViewController of UINavViewController required controller
+        initialVC.title = "Hello"
+        var navigationController = UINavigationController(rootViewController: initialVC)
+        navigationController.navigationBar.barTintColor = .purple
+        
+        window.rootViewController = navigationController
         window.makeKeyAndVisible()
     }
 

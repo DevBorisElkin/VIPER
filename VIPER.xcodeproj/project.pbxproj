@@ -17,6 +17,7 @@
 		5236A01128A3BC0400F9A699 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5236A01028A3BC0400F9A699 /* Entity.swift */; };
 		5236A01328A3BC0B00F9A699 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5236A01228A3BC0B00F9A699 /* Router.swift */; };
 		5236A01628A3C0B200F9A699 /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5236A01528A3C0B200F9A699 /* Constraints.swift */; };
+		5236A01928A3FA7700F9A699 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5236A01828A3FA7700F9A699 /* DetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		5236A01028A3BC0400F9A699 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		5236A01228A3BC0B00F9A699 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		5236A01528A3C0B200F9A699 /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
+		5236A01828A3FA7700F9A699 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +66,9 @@
 		52369FF428A3BB7200F9A699 /* VIPER */ = {
 			isa = PBXGroup;
 			children = (
+				5236A01728A3FA5800F9A699 /* DetailsSceenArchitecture */,
 				5236A01428A3C0A600F9A699 /* Helpers */,
-				5236A00928A3BBB800F9A699 /* Arcitecture */,
+				5236A00928A3BBB800F9A699 /* MainScreenArcitecture */,
 				52369FF528A3BB7200F9A699 /* AppDelegate.swift */,
 				52369FF728A3BB7200F9A699 /* SceneDelegate.swift */,
 				52369FFE28A3BB7500F9A699 /* Assets.xcassets */,
@@ -75,7 +78,7 @@
 			path = VIPER;
 			sourceTree = "<group>";
 		};
-		5236A00928A3BBB800F9A699 /* Arcitecture */ = {
+		5236A00928A3BBB800F9A699 /* MainScreenArcitecture */ = {
 			isa = PBXGroup;
 			children = (
 				5236A00A28A3BBE100F9A699 /* View.swift */,
@@ -84,7 +87,7 @@
 				5236A01028A3BC0400F9A699 /* Entity.swift */,
 				5236A01228A3BC0B00F9A699 /* Router.swift */,
 			);
-			path = Arcitecture;
+			path = MainScreenArcitecture;
 			sourceTree = "<group>";
 		};
 		5236A01428A3C0A600F9A699 /* Helpers */ = {
@@ -93,6 +96,14 @@
 				5236A01528A3C0B200F9A699 /* Constraints.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5236A01728A3FA5800F9A699 /* DetailsSceenArchitecture */ = {
+			isa = PBXGroup;
+			children = (
+				5236A01828A3FA7700F9A699 /* DetailsView.swift */,
+			);
+			path = DetailsSceenArchitecture;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +178,7 @@
 			files = (
 				5236A01328A3BC0B00F9A699 /* Router.swift in Sources */,
 				5236A00F28A3BBF900F9A699 /* Presenter.swift in Sources */,
+				5236A01928A3FA7700F9A699 /* DetailsView.swift in Sources */,
 				5236A00B28A3BBE100F9A699 /* View.swift in Sources */,
 				5236A01128A3BC0400F9A699 /* Entity.swift in Sources */,
 				5236A01628A3C0B200F9A699 /* Constraints.swift in Sources */,
